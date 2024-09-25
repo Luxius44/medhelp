@@ -27,8 +27,6 @@ Nous vous présentons notre application Médicine, une application Android déve
 
 Le rapport explique le déroulement de notre SAE de la planification au développement
 
-*Notez que le rapport ne contient pas la partie demandée par Madame Olfa, ni celle demandée par Monsieur Mottu.*
-
 ### Licence
 Ce projet est sous licence MIT. Voir le fichier LICENSE du dépôt pour plus de détails.
 
