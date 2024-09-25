@@ -24,8 +24,6 @@ Nous vous présentons notre application Médicine, une application Android déve
 ### Documentation
 - Rapport de la SAE Optimisation de données : Voir pdf
 - Lien YouTube de la démo de notre application : https://www.youtube.com/watch?v=fR8gczPZICc
-- Lien GIT : https://gitlab.univ-nantes.fr/E211688W/mobile-s-6-eloi
-- Lien Figma : https://www.figma.com/design/Fd0jypmfxFglLLB10sF7uL/Médicine-Eloi?node-id=0-1&t=loAThN3xr6Ece1JZ-1
 
 Le rapport explique le déroulement de notre SAE de la planification au développement
 
