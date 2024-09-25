@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/navigationBar"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	tools:context="com.example.fragments.NavigationBarFragment">
+
+	<TableLayout
+		android:id="@+id/tableLayout2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentBottom="true">
+
+
+		<TableRow android:layout_height="match_parent">
+
+			<ImageButton
+				android:id="@+id/homeButton"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_weight="0.5"
+				android:adjustViewBounds="true"
+				android:background="@drawable/rounded_background"
+				android:scaleType="fitCenter"
+				android:src="@drawable/baseline_home"
+				app:tint="@color/black" />
+
+			<ImageButton
+				android:id="@+id/medicationsButton"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_weight="0.5"
+				android:adjustViewBounds="true"
+				android:background="@drawable/rounded_background"
+				android:scaleType="centerInside"
+				android:src="@drawable/baseline_medication"
+				app:tint="@color/black" />
+
+
+			<ImageButton
+				android:id="@+id/prescriptionAddButton"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_weight="0.5"
+				android:adjustViewBounds="true"
+				android:background="@drawable/rounded_background"
+				android:scaleType="centerInside"
+				android:src="@drawable/baseline_post_add"
+				app:tint="@color/black" />
+
+			<ImageButton
+				android:id="@+id/prescriptionScanButton"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_weight="0.5"
+				android:adjustViewBounds="true"
+				android:background="@drawable/rounded_background"
+				android:scaleType="centerInside"
+				android:src="@drawable/baseline_document_scanner"
+				app:tint="@color/black" />
+
+			<ImageButton
+				android:id="@+id/prescriptionSideEffectButton"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_weight="0.5"
+				android:adjustViewBounds="true"
+				android:background="@drawable/rounded_background"
+				android:scaleType="centerInside"
+				android:src="@drawable/baseline_warning"
+				app:tint="@color/black" />
+		</TableRow>
+	</TableLayout>
+
+
+</FrameLayout>

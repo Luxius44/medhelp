@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ManualActivity"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white">
+
+	<ScrollView
+		android:id="@+id/scrollview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/constraint_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:context="com.example.activities.ManualActivity">
+
+
+			<AutoCompleteTextView
+				android:id="@+id/medicine_name_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/medical_info"
+				android:drawablePadding="5dp"
+				android:hint="@string/medicine_name_hint"
+				android:inputType="text"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.495"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/medicine_name_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/dosage_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/colorize"
+				android:drawablePadding="5dp"
+				android:hint="@string/dosage_hint"
+				android:inputType="text"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/dosage_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/quantity_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/scale"
+				android:drawablePadding="5dp"
+				android:hint="@string/quantity_hint"
+				android:inputType="number"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/quantity_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/renuwal_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/repeat"
+				android:drawablePadding="5dp"
+				android:hint="@string/renuwal_edit_hint"
+				android:inputType="number"
+				android:maxLength="3"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/renuwal_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/shape_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/mixture_med"
+				android:drawablePadding="5dp"
+				android:hint="@string/shape_edit_hint"
+				android:inputType="text"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/shape_title"
+				app:layout_constraintTop_toBottomOf="@+id/shape_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/date_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/calendar_month"
+				android:drawablePadding="5dp"
+				android:focusable="false"
+				android:hint="@string/date_edit_hint"
+				android:inputType="date"
+				android:maxLength="10"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/shape_title"
+				app:layout_constraintTop_toBottomOf="@+id/date_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/frequency_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/acute"
+				android:drawablePadding="10dp"
+				android:hint="@string/frequency_hint"
+				android:inputType="number"
+				android:maxLength="3"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toStartOf="@+id/frequency_title"
+				app:layout_constraintTop_toBottomOf="@+id/frequency_title"
+				app:layout_constraintWidth_percent="0.35"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/duration_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:drawableStart="@drawable/pending_actions"
+				android:drawablePadding="10dp"
+				android:hint="@string/_5"
+				android:inputType="number"
+				android:maxLength="3"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toStartOf="@+id/duration_title"
+				app:layout_constraintTop_toBottomOf="@+id/duration_title"
+				app:layout_constraintWidth_percent="0.35"
+				app:tint="#FF0000" />
+
+
+			<RelativeLayout
+				android:id="@+id/duration_choice_bordure"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				app:layout_constraintStart_toEndOf="@+id/times"
+				app:layout_constraintTop_toBottomOf="@+id/frequency_title"
+				app:layout_constraintWidth_percent="0.35" />
+
+			<Spinner
+				android:id="@+id/duration_choice"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:backgroundTint="@color/manual_filling_main"
+				android:drawablePadding="10dp"
+				android:entries="@array/duration_list"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:spinnerMode="dropdown"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toEndOf="@+id/times"
+				app:layout_constraintTop_toBottomOf="@+id/frequency_title"
+				app:layout_constraintWidth_percent="0.35" />
+
+			<RelativeLayout
+				android:id="@+id/duration_choice_bordure2"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toEndOf="@+id/times"
+				app:layout_constraintTop_toBottomOf="@+id/duration_title"
+				app:layout_constraintWidth_percent="0.35" />
+
+			<Spinner
+				android:id="@+id/duration_choice_treatment"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:drawablePadding="10dp"
+				android:entries="@array/duration_list"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:spinnerMode="dropdown"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toStartOf="@+id/duration_choice_bordure"
+				app:layout_constraintTop_toBottomOf="@+id/duration_title"
+				app:layout_constraintWidth_percent="0.35"
+				app:tint="#FF0000" />
+
+			<TextView
+				android:id="@+id/quantity_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/quantity_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/quantity_edit"
+				app:layout_constraintTop_toBottomOf="@+id/dosage_edit" />
+
+			<TextView
+				android:id="@+id/renuwal_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/renuwal_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/quantity_edit"
+				app:layout_constraintTop_toBottomOf="@+id/duration_edit" />
+
+			<TextView
+				android:id="@+id/shape_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/shape_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/renuwal_edit"
+				app:layout_constraintTop_toBottomOf="@+id/renuwal_edit" />
+
+			<TextView
+				android:id="@+id/date_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/date_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/renuwal_edit"
+				app:layout_constraintTop_toBottomOf="@+id/shape_edit" />
+
+			<TextView
+				android:id="@+id/frequency_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/frequency_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/quantity_edit"
+				app:layout_constraintTop_toBottomOf="@+id/quantity_edit" />
+
+			<TextView
+				android:id="@+id/duration_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/duration_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/quantity_edit"
+				app:layout_constraintTop_toBottomOf="@+id/frequency_edit" />
+
+			<TextView
+				android:id="@+id/times"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:text="@string/times_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				app:layout_constraintBottom_toBottomOf="@+id/frequency_edit"
+				app:layout_constraintStart_toEndOf="@+id/frequency_edit"
+				app:layout_constraintTop_toTopOf="@+id/frequency_edit" />
+
+			<TextView
+				android:id="@+id/dosage_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/dosage_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/dosage_edit"
+				app:layout_constraintTop_toBottomOf="@+id/medicine_name_edit" />
+
+			<TextView
+				android:id="@+id/medicine_name_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/medicine_name_title_text"
+				android:textColor="@color/manual_filling_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/medicine_name_edit"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<Button
+				android:id="@+id/validateButton"
+				style="@style/Widget.AppCompat.Button"
+				android:theme="@style/ButtonManualFillingStyle"
+				android:layout_width="130dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="60dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginBottom="100dp"
+				android:background="@drawable/background_button"
+				android:text="@string/validateButtonText"
+				android:textColor="@color/white"
+				app:backgroundTint="@null"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/date_edit" />
+
+			<Button
+				android:id="@+id/cancelButton"
+				style="@style/Widget.AppCompat.Button"
+				android:theme="@style/ButtonManualFillingStyle"
+				android:layout_width="130dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="60dp"
+				android:background="@drawable/background_button"
+				android:text="@string/cancelButtonText"
+				android:textColor="@color/white"
+				app:backgroundTint="@null"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/date_edit" />
+
+			<TextView
+				android:id="@+id/nameTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/medicine_name_edit"
+				app:layout_constraintTop_toBottomOf="@+id/medicine_name_edit" />
+
+			<TextView
+				android:id="@+id/dateTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/date_edit"
+				app:layout_constraintTop_toBottomOf="@+id/date_edit" />
+
+			<TextView
+				android:id="@+id/dosageTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/dosage_edit"
+				app:layout_constraintTop_toBottomOf="@+id/dosage_edit" />
+
+			<TextView
+				android:id="@+id/durationTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/duration_edit"
+				app:layout_constraintTop_toBottomOf="@+id/duration_edit" />
+
+			<TextView
+				android:id="@+id/renuwalTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/renuwal_edit"
+				app:layout_constraintTop_toBottomOf="@+id/renuwal_edit" />
+
+			<TextView
+				android:id="@+id/frequencyTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/frequency_edit"
+				app:layout_constraintTop_toBottomOf="@+id/frequency_edit" />
+
+			<TextView
+				android:id="@+id/shapeTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/shape_edit"
+				app:layout_constraintTop_toBottomOf="@+id/shape_edit" />
+
+			<TextView
+				android:id="@+id/quantityTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/quantity_edit"
+				app:layout_constraintTop_toBottomOf="@+id/quantity_edit" />
+
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</ScrollView>
+
+	<View
+		android:id="@+id/overlay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#80000000"
+		android:visibility="gone" />
+
+	<ImageView
+		android:id="@+id/loading_old"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginTop="70dp"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:srcCompat="@drawable/loading" />
+
+
+	<!-- Linear progress indicator -->
+	<com.google.android.material.progressindicator.CircularProgressIndicator
+		android:id="@+id/loading"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:indeterminate="true"
+		app:indicatorColor="#323232"
+		app:indicatorSize="120dp"
+		app:trackCornerRadius="6dp"
+		app:trackThickness="11dp" />
+
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/navigationBarFragment"
+		android:name="com.example.fragments.NavigationBarFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout="@layout/fragment_navigation_bar" />
+
+
+</RelativeLayout>

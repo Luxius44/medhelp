@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/HomePage"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/home_page_background"
+	tools:context="com.example.activities.HomeActivity">
+
+	<AutoCompleteTextView
+		android:id="@+id/search_bar"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/edit_text_manual_filling_border_black"
+		android:drawableStart="@drawable/baseline_search_24"
+		android:drawablePadding="5dp"
+		android:hint="@string/search_hint"
+		android:inputType="text"
+		android:paddingLeft="10dp"
+		android:paddingTop="2dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="2dp"
+		android:textColorHint="@color/grey"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.495"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imageView2"
+		app:layout_constraintWidth_percent="0.95"
+		android:imeOptions="actionDone"
+		app:tint="#FF0000" />
+
+	<ImageButton
+		android:id="@+id/profilButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginTop="10dp"
+		android:background="@null"
+		android:contentDescription="@string/profile"
+		android:src="@drawable/baseline_profile"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:tint="@color/black" />
+
+	<ImageView
+		android:id="@+id/imageView2"
+		android:layout_width="283dp"
+		android:layout_height="70dp"
+		android:layout_marginTop="70dp"
+		android:adjustViewBounds="true"
+		android:src="@drawable/nom_medecine"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/fragmentContainerView"
+		android:name="com.example.fragments.NavigationBarFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout="@layout/fragment_navigation_bar" />
+
+	<TableLayout
+		android:id="@+id/tableLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:stretchColumns="*"
+		app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView"
+		app:layout_constraintTop_toBottomOf="@+id/search_bar"
+		app:layout_constraintVertical_bias="0.3"
+		tools:layout_editor_absoluteX="10dp">
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_marginVertical="20dp">
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/homePageMedicinesButton"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:backgroundTint="@color/home_page_background"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_margin="10dp"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:adjustViewBounds="true"
+						android:background="@null"
+						android:contentDescription="@string/profile"
+						android:src="@drawable/baseline_medication"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						app:tint="@color/black" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="@string/medicines"
+						android:textColor="@color/home_page_main_acc"
+						android:textStyle="bold" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="@string/Medicines_Resume"
+						android:textColor="@color/black" />
+
+				</LinearLayout>
+
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/homePageSideEffectButton"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:backgroundTint="@color/home_page_background"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_margin="10dp"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:adjustViewBounds="true"
+						android:background="@null"
+						android:contentDescription="@string/profile"
+						android:src="@drawable/baseline_warning"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						app:tint="@color/black" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="@string/sideEffects"
+						android:textColor="@color/home_page_main_acc"
+						android:textStyle="bold" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="@string/sideEffects_Resume"
+						android:textColor="@color/black" />
+
+				</LinearLayout>
+
+			</androidx.cardview.widget.CardView>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/homePageAddPrescriptionButton"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:backgroundTint="@color/home_page_background"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_margin="10dp"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:adjustViewBounds="true"
+						android:background="@null"
+						android:contentDescription="@string/profile"
+						android:src="@drawable/baseline_post_add"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						app:tint="@color/black" />
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="@string/manualAddMedicine"
+						android:textColor="@color/home_page_main_acc"
+						android:textStyle="bold" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="@string/ManualAddMedicine_Resume"
+						android:textColor="@color/black" />
+
+				</LinearLayout>
+				-->
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/homePageScanPrescriptionButton"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:backgroundTint="@color/home_page_background"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_margin="10dp"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:adjustViewBounds="true"
+						android:background="@null"
+						android:contentDescription="@string/profile"
+						android:src="@drawable/baseline_document_scanner"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						app:tint="@color/black" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="@string/PrescriptionScan"
+						android:textColor="@color/home_page_main_acc"
+						android:textStyle="bold" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="@string/scanPrescription_Resume"
+						android:textColor="@color/black" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+		</TableRow>
+	</TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

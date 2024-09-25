@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="ButtonManualFillingStyle">
+		<item name="buttonColor">@color/manual_filling_main</item>
+	</style>
+	<style name="ButtonMedicineStyle">
+		<item name="buttonColor">@color/medication_stock_main</item>
+	</style>
+</resources>

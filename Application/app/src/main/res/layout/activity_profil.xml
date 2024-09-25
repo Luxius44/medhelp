@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ProfileActivity"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:layout_editor_absoluteX="0dp"
+		tools:layout_editor_absoluteY="284dp">
+
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:context="com.example.activities.HomeActivity">
+
+			<TextView
+				android:id="@+id/profil_subtitle"
+				android:layout_width="350dp"
+				android:layout_height="100dp"
+				android:layout_marginTop="8dp"
+				android:justificationMode="inter_word"
+				android:text="@string/profil_subtitle_text"
+				android:textColor="@color/black"
+				android:textSize="15sp"
+				android:textStyle="italic"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/medicine_nom" />
+
+
+			<EditText
+				android:id="@+id/age_edit"
+				android:layout_width="170dp"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="8dp"
+				android:autofillHints=""
+				android:background="@drawable/edit_text_neutral_border"
+				android:drawablePadding="10dp"
+				android:hint="@string/hint_age"
+				android:inputType="number"
+				android:maxLength="3"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColor="@color/black"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/age_title"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/taille_edit"
+				android:layout_width="170dp"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:autofillHints=""
+				android:background="@drawable/edit_text_neutral_border"
+				android:drawablePadding="10dp"
+				android:hint="@string/hint_taille"
+				android:inputType="number"
+				android:maxLength="3"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColor="@color/black"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toStartOf="@+id/allergie_title"
+				app:layout_constraintTop_toBottomOf="@+id/taille_title"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/allergie_edit"
+				android:layout_width="match_parent"
+				android:layout_height="145dp"
+				android:layout_gravity="center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="20dp"
+				android:autofillHints=""
+				android:background="@drawable/edit_text_neutral_border"
+				android:drawablePadding="10dp"
+				android:gravity="start"
+				android:hint="@string/hint_allergie"
+				android:inputType="textMultiLine"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:scrollbars="vertical"
+				android:textColor="@color/black"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/allergie_title"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/chronique_edit"
+				android:layout_width="match_parent"
+				android:layout_height="145dp"
+				android:layout_gravity="center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="20dp"
+				android:autofillHints=""
+				android:background="@drawable/edit_text_neutral_border"
+				android:drawablePadding="10dp"
+				android:gravity="start"
+				android:hint="@string/hint_chronique"
+				android:inputType="textMultiLine"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:scrollbars="vertical"
+				android:textColor="@color/black"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/chronique_title"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/complement_edit"
+				android:layout_width="match_parent"
+				android:layout_height="145dp"
+				android:layout_gravity="center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginBottom="100dp"
+				android:autofillHints=""
+				android:background="@drawable/edit_text_neutral_border"
+				android:drawablePadding="10dp"
+				android:gravity="start"
+				android:hint="@string/hint_complement"
+				android:inputType="textMultiLine"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:scrollbars="vertical"
+				android:textColor="@color/black"
+				android:textColorHint="@color/grey"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/complement_title"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/sexe_edit"
+				android:layout_width="170dp"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:layout_marginEnd="20dp"
+				android:autofillHints=""
+				android:background="@drawable/edit_text_neutral_border"
+				android:drawablePadding="10dp"
+				android:hint="@string/hint_sexe"
+				android:inputType="text"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColor="@color/black"
+				android:textColorHint="@color/grey"
+				app:layout_constraintStart_toStartOf="@+id/poids_title"
+				app:layout_constraintTop_toTopOf="@+id/age_edit"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/poids_edit"
+				android:layout_width="170dp"
+				android:layout_height="48dp"
+				android:layout_gravity="center"
+				android:autofillHints=""
+				android:background="@drawable/edit_text_neutral_border"
+				android:drawablePadding="10dp"
+				android:hint="@string/hint_poids"
+				android:inputType="number"
+				android:maxLength="3"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColor="@color/black"
+				android:textColorHint="@color/grey"
+				app:layout_constraintEnd_toEndOf="@+id/allergie_edit"
+				app:layout_constraintTop_toTopOf="@+id/taille_edit"
+				app:tint="#FF0000" />
+
+			<TextView
+				android:id="@+id/age_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="16dp"
+				android:text="@string/title_age_text"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/profil_subtitle" />
+
+			<TextView
+				android:id="@+id/taille_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:text="@string/title_taille_text"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/taille_edit"
+				app:layout_constraintTop_toBottomOf="@+id/age_edit" />
+
+			<TextView
+				android:id="@+id/allergie_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/title_allergie_text"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/allergie_edit"
+				app:layout_constraintTop_toBottomOf="@+id/taille_edit" />
+
+			<TextView
+				android:id="@+id/chronique_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="16dp"
+				android:text="@string/title_chronique_text"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/allergie_edit" />
+
+			<TextView
+				android:id="@+id/complement_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="16dp"
+				android:text="@string/title_complement_text"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/chronique_edit" />
+
+			<TextView
+				android:id="@+id/sexe_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/title_sexe_text"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/sexe_edit"
+				app:layout_constraintTop_toTopOf="@+id/age_title" />
+
+			<TextView
+				android:id="@+id/poids_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/title_poids_text"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/poids_edit"
+				app:layout_constraintTop_toTopOf="@+id/taille_title" />
+
+			<ImageView
+				android:id="@+id/medicine_nom"
+				android:layout_width="283dp"
+				android:layout_height="70dp"
+				android:layout_marginTop="64dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/nom_medecine" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</ScrollView>
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/fragmentContainerView"
+		android:name="com.example.fragments.NavigationBarFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout="@layout/fragment_navigation_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

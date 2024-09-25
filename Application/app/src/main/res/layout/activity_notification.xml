@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.activities.NotificationActivity">
+
+	<TextView
+		android:id="@+id/quantity_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="@string/quantity_title_text"
+		android:textColor="#000000"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		app:layout_constraintStart_toStartOf="@+id/frequency_title3"
+		app:layout_constraintTop_toBottomOf="@+id/quantity" />
+
+	<EditText
+		android:id="@+id/quantity_edit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginStart="5dp"
+		android:layout_marginTop="24dp"
+		android:background="@drawable/edit_text_manual_filling_border_black"
+		android:drawableStart="@drawable/scale"
+		android:drawablePadding="5dp"
+		android:hint="@string/quantity_hint"
+		android:inputType="number"
+		android:enabled="false"
+		android:paddingLeft="10dp"
+		android:paddingTop="2dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="2dp"
+		android:textColorHint="#8E8E8E"
+		app:layout_constraintStart_toStartOf="@+id/quantity"
+		app:layout_constraintTop_toBottomOf="@+id/quantity_title"
+		app:layout_constraintWidth_percent="0.95"
+		app:tint="#FF0000" />
+
+	<Spinner
+		android:id="@+id/frequency_spinner"
+		android:layout_width="0dp"
+		android:layout_height="50dp"
+		android:layout_gravity="center"
+		android:layout_marginStart="5dp"
+		android:layout_marginTop="25dp"
+		android:drawablePadding="10dp"
+		android:entries="@array/duration_list"
+		android:paddingLeft="10dp"
+		android:paddingTop="2dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="2dp"
+		android:spinnerMode="dropdown"
+		android:textColorHint="#8E8E8E"
+		app:layout_constraintStart_toEndOf="@+id/times3"
+		app:layout_constraintTop_toBottomOf="@+id/frequency_title3"
+		app:layout_constraintWidth_percent="0.35"
+		app:tint="#FF0000" />
+
+	<EditText
+		android:id="@+id/quantity"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="24dp"
+		android:background="@drawable/edit_text_manual_filling_border_black"
+		android:drawableStart="@drawable/ic_take"
+		android:drawablePadding="10dp"
+		android:hint="@string/frequency_hint"
+		android:inputType="number"
+		android:paddingLeft="10dp"
+		android:paddingTop="2dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="2dp"
+		android:textColorHint="#8E8E8E"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/frequency_title3"
+		app:layout_constraintWidth_percent="0.35"
+		app:tint="#FF0000" />
+
+	<TextView
+		android:id="@+id/times3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="36dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:text="@string/times_text"
+		android:textColor="#000000"
+		android:textSize="20sp"
+		app:layout_constraintStart_toEndOf="@+id/quantity"
+		app:layout_constraintTop_toBottomOf="@+id/frequency_title3" />
+
+	<TextView
+		android:id="@+id/frequency_title3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="72dp"
+		android:text="Prenez"
+		android:textColor="#000000"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/nameMedicine" />
+
+	<Button
+		android:id="@+id/validateButton"
+		android:layout_width="239dp"
+		android:layout_height="70dp"
+		android:layout_marginStart="84dp"
+		android:layout_marginBottom="16dp"
+		android:background="@drawable/background_button"
+		android:text="Prendre maintenant "
+		android:theme="@style/ButtonMedicineStyle"
+		app:backgroundTint="@null"
+		app:layout_constraintBottom_toTopOf="@+id/notTakeButton"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:id="@+id/notTakeButton"
+		android:layout_width="172dp"
+		android:layout_height="70dp"
+		android:layout_marginStart="116dp"
+		android:layout_marginBottom="100dp"
+		android:background="@drawable/background_button"
+		android:text="Ne pas prendre"
+		android:theme="@style/ButtonMedicineStyle"
+		app:backgroundTint="@null"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/nameMedicine"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="64dp"
+		android:text="nameMedicine"
+		android:textAlignment="center"
+		android:textSize="36dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"></TextView>
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/navigationBarFragment"
+		android:name="com.example.fragments.NavigationBarFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout="@layout/fragment_navigation_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

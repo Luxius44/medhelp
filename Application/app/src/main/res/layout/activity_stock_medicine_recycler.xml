@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/StockActivity"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView"
+		app:layout_constraintTop_toTopOf="parent">
+
+
+		<TextView
+			android:id="@+id/pasMedoc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/no_registered_medication"
+			android:textColor="@color/medication_stock_main"
+			android:textSize="18sp"
+			android:textStyle="italic"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerViewMedicine"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			app:layoutManager="GridLayoutManager"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:spanCount="2"
+			tools:itemCount="10" />
+	</FrameLayout>
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/fragmentContainerView"
+		android:name="com.example.fragments.NavigationBarFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout="@layout/fragment_navigation_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

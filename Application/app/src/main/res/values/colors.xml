@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0F4DEE</color>
+    <color name="grey">#8F8F8F</color>
+    <color name="transparent">#000000FF</color>
+
+
+    <!--  COULEURS PRINCIPALES DE PAGES  -->
+
+    <!--  1 - Page d'accueil  -->
+    <color name="home_page_main">#4291fe</color>
+    <color name="home_page_main_acc">#056DFF</color>
+    <color name="home_page_main_low_opacity">#504291fe</color>
+    <color name="home_page_light">#dfedff</color>
+    <color name="home_page_background">#fafcff</color>
+
+    <!--  2 - Stock de médicaments  -->
+    <color name="medication_stock_main">#5E35B1</color>
+    <color name="medication_stock_main_low_opacity">#A624AA</color>
+    <color name="medication_stock_light">#7AFB80FF</color>
+
+    <!--  3 - Remplissage manuel  -->
+    <color name="manual_filling_main">#14730B</color>
+    <color name="manual_filling_light">#805CAC53</color>
+
+    <!--  4 - Scanner une ordonnance  -->
+    <color name="scan_document_main">#a80e0e</color>
+    <color name="scan_document_main_low_opacity">#50a80e0e</color>
+    <color name="scan_document_light">#ffe4e4</color>
+    <color name="scan_document_background">#fff8f8</color>
+
+    <!--  5 - Effets secondaires  -->
+    <color name="warnings_main">#62011e</color>
+    <color name="warnings_main_low_opacity">#5062011e</color>
+    <color name="warnings_light">#ffdde8</color>
+    <color name="warnings_gray">#765b60</color>
+    <color name="warnings_background">#fffbfc</color>
+
+
+</resources>

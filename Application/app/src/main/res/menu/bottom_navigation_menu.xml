@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/item_1"
+		android:enabled="true"
+		android:icon="@drawable/baseline_home"
+		android:tint="@color/home_page_main"
+		android:title="@string/home_page" />
+	<item
+		android:id="@+id/item_2"
+		android:enabled="true"
+		android:icon="@drawable/baseline_medication"
+		android:tint="@color/medication_stock_main"
+		android:title="@string/medication_stock" />
+	<item
+		android:id="@+id/item_3"
+		android:enabled="true"
+		android:icon="@drawable/baseline_post_add"
+		android:tint="@color/manual_filling_main"
+		android:title="@string/manual_filling" />
+	<item
+		android:id="@+id/item_4"
+		android:enabled="true"
+		android:icon="@drawable/baseline_document_scanner"
+		android:tint="@color/scan_document_main"
+		android:title="@string/scan_document" />
+	<item
+		android:id="@+id/item_5"
+		android:enabled="true"
+		android:icon="@drawable/baseline_warning"
+		android:tint="@color/warnings_main"
+		android:title="@string/warnings" />
+</menu>

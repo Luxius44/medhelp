@@ -1,0 +1,106 @@
+<resources>
+	<string name="app_name">Médicine</string>
+	<string name="frequency_hint">“5”</string>
+	<string name="quantity_hint">“5”, “20”, “30”, etc.</string>
+	<string name="dosage_hint">“500 mg”, “20 mg”, “1 g”, etc.</string>
+	<string name="medicine_name_hint">“Paracétamol”, “Ibuprofène”, etc.</string>
+	<string name="medicine_name_title_text">Nom du médicament</string>
+	<string name="dosage_title_text">Dosage</string>
+	<string name="times_text">fois par</string>
+	<string name="frequency_title_text">Fréquence</string>
+	<string name="quantity_title_text">Quantité</string>
+	<string name="duration_title_text">Durée du traitement</string>
+	<string name="duration_edit_hint">08:00</string>
+	<string name="renuwal_title_text">Nombre de renouvellements</string>
+	<string name="renuwal_edit_hint">“1”, “4”, “10”, etc.</string>
+	<string name="shape_title_text">Forme</string>
+	<string name="shape_edit_hint">“Comprimé”, “Gélule”, “Sirop”, etc.</string>
+	<string name="date_title_text">Date de l\'ordonnance</string>
+	<string name="date_edit_hint">“JJ/MM/AAAA”</string>
+	<string name="validateButtonText">VALIDER</string>
+	<string name="cancelButtonText">ANNULER</string>
+	<string name="required_field">Champ obligatoire non renseigné</string>
+	<string name="formatErrorDosage">Erreur de format, exemple \'1 g\' ou \'150 ml\'</string>
+	<string name="formatErrorDate">Erreur de format \'jj/mm/aaaa\'</string>
+	<string name="expiration">Expiration :</string>
+	<string name="doliprane">Doliprane</string>
+	<string name="r_serves">Réserves</string>
+	<string name="expirationText">04.10.2024</string>
+	<string name="uniteText">30 Unité(s)</string>
+	<string name="statut">Statut :</string>
+	<string name="statutText">Pris</string>
+	<string name="reminder_title_text">Rappel</string>
+	<string name="TitleRappel">Rappel</string>
+	<string name="TextRappel">Veuillez remplir les champs vide et valider les informations du formulaire pour ajouter un rappel sur le médicament.</string>
+	<string name="DateRappel">Début du Rappel</string>
+	<string name="retour">Retour</string>
+	<string name="ajouter">ajouter</string>
+	<string name="reminder_date">Début du rappel</string>
+	<string name="name_title">Nom du médicament</string>
+	<string name="description_title_text">Ajouter une description</string>
+	<string name="description_edit_hint">“à prendre après le repas”, etc.</string>
+	<string name="notification_time_edit_hint">“08:00”</string>
+	<string name="number_reminder_title">Nombre de dose</string>
+	<string name="number_reminder_edit_hint">“1”, “2”, etc.</string>
+	<string name="days_reminder_title">Rappel les :</string>
+	<string name="monday_mini">L</string>
+	<string name="tuesday_mini">Ma</string>
+	<string name="wednesday_mini">Me</string>
+	<string name="thursday_mini">J</string>
+	<string name="friday_mini">V</string>
+	<string name="saturday_mini">S</string>
+	<string name="sunday_mini">D</string>
+	<string name="supprimer">Supprimer</string>
+	<string name="_5">5</string>
+	<string name="profil_subtitle_text">Pour une expérience personnalisée et optimale, complétez votre profil santé. Vos informations resteront confidentielles et serviront uniquement à améliorer l\'application.</string>
+	<string name="hint_age">“23“</string>
+	<string name="profile">Profile</string>
+	<string name="medicines">Médicaments</string>
+	<string name="Medicines_Resume">Posologies, Indications, Gestion de stock, Equivalences de doses, Rappel..</string>
+	<string name="sideEffects">Effets Secondaires</string>
+	<string name="sideEffects_Resume">Recensement de tous les effets secondaires connus liés à vos traitements</string>
+	<string name="manualAddMedicine">Ajout Manuel d\'un Médicament</string>
+	<string name="ManualAddMedicine_Resume">Entrez manuellement les informations d\'un médicament et ajoutez-le à votre stock</string>
+	<string name="PrescriptionScan">Scan d\'ordonnance</string>
+	<string name="scanPrescription_Resume">Ajoutez automatiquement les médicaments via la photo d\'une ordonnance</string>
+	<string name="hint_taille">“169“</string>
+	<string name="hint_allergie">“Arachides“, “antibiotiques“, “piqûres“, etc</string>
+	<string name="hint_chronique">“Asthme“, “diabète“, etc</string>
+	<string name="hint_complement">“Antécédents familiaux“, “insomnies“, etc</string>
+	<string name="hint_sexe">“Masculin“</string>
+	<string name="hint_poids">“74“</string>
+	<string name="title_age_text">Âge</string>
+	<string name="title_taille_text">Taille (en cm)</string>
+	<string name="title_allergie_text">Allergies/Intolérances</string>
+	<string name="title_chronique_text">Maladies chroniques</string>
+	<string name="title_complement_text">Informations complémentaires</string>
+	<string name="title_sexe_text">Sexe</string>
+	<string name="title_poids_text">Poids (en kg)</string>
+	<string name="scanPrescriptionWarningParagraph">Veuillez scanner votre ordonnance pour que nous puissions en extraire les médicaments prescrits et les ajouter à votre stock. Ce processus utilise notre IA. Aucune information ne sera conservée ni utilisée.</string>
+	<string name="home_page">Page d\'accueil</string>
+	<string name="medication_stock">Stock de médicaments</string>
+	<string name="manual_filling">Remplissage manuel</string>
+	<string name="scan_document">Scanner une ordonnance</string>
+	<string name="warnings">Effets secondaires</string>
+	<string name="no_registered_medication">Vous n\'avez aucun médicament enregistré.</string>
+	<string name="no_feature_developped">Les effets secondaires ne sont pas encore disponibles !</string>
+    <string name="medicine_name">Nom :</string>
+	<string name="place_holder">Vide</string>
+	<string name="dosage_name_text">Dosage :</string>
+	<string name="shape_name_text">Forme :</string>
+	<string name="administration_text">Voie d\'administration :</string>
+	<string name="substance_text">Substance active :</string>
+	<string name="presentation_text">Présentation :</string>
+	<string name="information_text">Information importante :</string>
+    <string name="search_hint">Rechercher un médicament</string>
+    <string name="hint_effets_secondaires">Principaux effets secondaires :</string>
+
+
+    <string-array name="duration_list">
+		<item>Jour(s)</item>
+		<item>Semaine(s)</item>
+		<item>Mois</item>
+		<item>Année(s)</item>
+	</string-array>
+
+</resources>

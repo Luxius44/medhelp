@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:context="com.example.activities.HomeActivity">
+
+			<TextView
+				android:id="@+id/reminder_subtitle"
+				android:layout_width="258dp"
+				android:layout_height="88dp"
+				android:layout_marginStart="88dp"
+				android:text="@string/TextRappel"
+				android:textSize="15sp"
+				android:textStyle="italic"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+			<TextView
+				android:id="@+id/title2"
+				android:layout_width="253dp"
+				android:layout_height="45dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="16dp"
+				android:gravity="center"
+				android:text="@string/TitleRappel"
+				android:textSize="28sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<EditText
+				android:id="@+id/date_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border_black"
+				android:drawableStart="@drawable/calendar_month"
+				android:drawablePadding="5dp"
+				android:focusable="false"
+				android:hint="@string/date_edit_hint"
+				android:maxLength="10"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="#8E8E8E"
+				android:textSize="20dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/date_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/description_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border_black"
+				android:drawableStart="@drawable/edit_note"
+				android:drawablePadding="5dp"
+				android:hint="@string/description_edit_hint"
+				android:inputType="text"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="#8E8E8E"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/description_title"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/medicine_name_reminder_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border_black"
+				android:drawableStart="@drawable/medical_info"
+				android:drawablePadding="5dp"
+				android:hint="@string/medicine_name_hint"
+				android:inputType="text"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="#8E8E8E"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/hour"
+				app:layout_constraintWidth_percent="0.95"
+				app:tint="#FF0000" />
+
+			<EditText
+				android:id="@+id/duration_edit"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border_black"
+				android:drawableStart="@drawable/pending_actions"
+				android:drawablePadding="10dp"
+				android:hint="@string/_5"
+				android:inputType="number"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:textColorHint="#8E8E8E"
+				app:layout_constraintStart_toStartOf="@+id/duration_title"
+				app:layout_constraintTop_toBottomOf="@+id/duration_title"
+				app:layout_constraintWidth_percent="0.35"
+				app:tint="#FF0000" />
+
+
+			<RelativeLayout
+				android:id="@+id/duration_choice_bordure2"
+				android:layout_width="0dp"
+				android:layout_height="55dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_text_manual_filling_border_black"
+				app:layout_constraintEnd_toEndOf="@+id/description_edit"
+				app:layout_constraintTop_toBottomOf="@+id/duration_title"
+				app:layout_constraintWidth_percent="0.35" />
+
+			<Spinner
+				android:id="@+id/duration_choice_treatment"
+				android:layout_width="0dp"
+				android:layout_height="55dp"
+				android:layout_gravity="center"
+				android:drawablePadding="10dp"
+				android:entries="@array/duration_list"
+				android:paddingLeft="10dp"
+				android:paddingTop="2dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="2dp"
+				android:spinnerMode="dropdown"
+				android:textColorHint="#8E8E8E"
+				app:layout_constraintStart_toStartOf="@+id/duration_choice_bordure2"
+				app:layout_constraintTop_toTopOf="@+id/duration_edit"
+				app:layout_constraintWidth_percent="0.35"
+				app:tint="#FF0000" />
+
+			<TextView
+				android:id="@+id/date_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/reminder_date"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/duration_edit"
+				app:layout_constraintTop_toBottomOf="@+id/duration_edit" />
+
+			<TextView
+				android:id="@+id/description_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/description_title_text"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/description_edit"
+				app:layout_constraintTop_toBottomOf="@+id/medicine_name_reminder_edit" />
+
+			<TextView
+				android:id="@+id/hour"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/name_title"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/medicine_name_reminder_edit"
+				app:layout_constraintTop_toBottomOf="@+id/reminder_subtitle" />
+
+			<TextView
+				android:id="@+id/duration_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:text="@string/duration_title_text"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/date_edit"
+				app:layout_constraintTop_toBottomOf="@+id/description_edit" />
+
+			<Button
+				android:id="@+id/validateButton"
+				android:layout_width="130dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="60dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="70dp"
+				android:background="@drawable/background_button"
+				android:theme="@style/ButtonMedicineStyle"
+				android:text="@string/validateButtonText"
+				app:backgroundTint="@null"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+			<Button
+				android:id="@+id/cancelButton"
+				android:layout_width="130dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="60dp"
+				android:background="@drawable/background_button"
+				android:theme="@style/ButtonMedicineStyle"
+				android:text="@string/cancelButtonText"
+				app:backgroundTint="@null"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toTopOf="@+id/validateButton" />
+
+			<Button
+				android:id="@+id/addButton"
+				android:layout_width="130dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="140dp"
+				android:layout_marginTop="20dp"
+				android:background="@drawable/background_button"
+				android:theme="@style/ButtonMedicineStyle"
+				android:text="@string/ajouter"
+				app:backgroundTint="@null"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/recyclerViewReminder" />
+
+			<TextView
+				android:id="@+id/dateTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/date_edit"
+				app:layout_constraintTop_toBottomOf="@+id/date_edit" />
+
+			<TextView
+				android:id="@+id/frequencyTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/duration_edit"
+				app:layout_constraintTop_toBottomOf="@+id/duration_edit" />
+
+			<TextView
+				android:id="@+id/descriptionTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/duration_edit"
+				app:layout_constraintTop_toBottomOf="@+id/description_edit" />
+
+			<TextView
+				android:id="@+id/nameTextInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FF0000"
+				app:layout_constraintStart_toStartOf="@+id/duration_edit"
+				app:layout_constraintTop_toBottomOf="@+id/medicine_name_reminder_edit" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerViewReminder"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginTop="32dp"
+				android:layout_weight="1"
+				app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/date_edit"
+				tools:itemCount="1" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</ScrollView>
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/fragmentContainerView"
+		android:name="com.example.fragments.NavigationBarFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout="@layout/fragment_navigation_bar" />
+
+</RelativeLayout>

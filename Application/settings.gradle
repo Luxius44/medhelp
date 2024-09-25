@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            name = "medicineReposilite"
+            url = uri("https://reposilite.iut-sae-medicine.site/snapshots")
+        }
+    }
+}
+rootProject.name = "Medicine"
+include ':app'
